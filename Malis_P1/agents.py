@@ -197,7 +197,7 @@ class EpsilonGreedyAgent(Agent):
     """
 
     def __init__(self, n_spots=5, seed=None, epsilon=0.1):
-        super()._init_(n_spots, seed)
+        super().__init__(n_spots, seed)
         self.epsilon = epsilon
 
     def reset(self):
@@ -235,7 +235,7 @@ class UCBAgent(Agent):
     """
 
     def __init__(self, n_spots=5, seed=None, c=2.0):
-        super()._init_(n_spots, seed)
+        super().__init__(n_spots, seed)
         self.c = c
 
     def reset(self):
