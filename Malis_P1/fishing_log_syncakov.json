@@ -1,0 +1,571 @@
+{
+  "game": "fishing-season",
+  "version": "2.2",
+  "student_id": "syncakov",
+  "bay_seed": 855350519,
+  "started_at": "2026-10-20T18:49:10.663Z",
+  "finished_at": "2026-10-20T18:56:09.432Z",
+  "sd": 2.5,
+  "spots": [
+    "Old Pier",
+    "Rocky Point",
+    "Seagrass Bed",
+    "Deep Channel",
+    "Lighthouse Reef"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "key": "standard",
+      "days": 30,
+      "shift_day": null,
+      "total_kg": 260.1,
+      "strategy_note": "First I checked the ports and then I stayed where I got the most money on average",
+      "note_written_at": "2026-10-20T18:51:49.191Z",
+      "choices": [
+        {
+          "day": 1,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 7.7,
+          "decision_ms": 8000
+        },
+        {
+          "day": 2,
+          "spot": 1,
+          "spot_name": "Rocky Point",
+          "catch_kg": 4.1,
+          "decision_ms": 9600
+        },
+        {
+          "day": 3,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 9.9,
+          "decision_ms": 4600
+        },
+        {
+          "day": 4,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 9.2,
+          "decision_ms": 3700
+        },
+        {
+          "day": 5,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 8.4,
+          "decision_ms": 2300
+        },
+        {
+          "day": 6,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 6.7,
+          "decision_ms": 2100
+        },
+        {
+          "day": 7,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 12.2,
+          "decision_ms": 2400
+        },
+        {
+          "day": 8,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 9.4,
+          "decision_ms": 2000
+        },
+        {
+          "day": 9,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 10.9,
+          "decision_ms": 2100
+        },
+        {
+          "day": 10,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 12.8,
+          "decision_ms": 1900
+        },
+        {
+          "day": 11,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 11.9,
+          "decision_ms": 1900
+        },
+        {
+          "day": 12,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 11.3,
+          "decision_ms": 1600
+        },
+        {
+          "day": 13,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 7.5,
+          "decision_ms": 1600
+        },
+        {
+          "day": 14,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 12.4,
+          "decision_ms": 1700
+        },
+        {
+          "day": 15,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 9.9,
+          "decision_ms": 1500
+        },
+        {
+          "day": 16,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 4.7,
+          "decision_ms": 2000
+        },
+        {
+          "day": 17,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 12.1,
+          "decision_ms": 1700
+        },
+        {
+          "day": 18,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 11.4,
+          "decision_ms": 2900
+        },
+        {
+          "day": 19,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 6.8,
+          "decision_ms": 1800
+        },
+        {
+          "day": 20,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 6.7,
+          "decision_ms": 1600
+        },
+        {
+          "day": 21,
+          "spot": 1,
+          "spot_name": "Rocky Point",
+          "catch_kg": 1.5,
+          "decision_ms": 1700
+        },
+        {
+          "day": 22,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 12,
+          "decision_ms": 1300
+        },
+        {
+          "day": 23,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 8.4,
+          "decision_ms": 1700
+        },
+        {
+          "day": 24,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 4.7,
+          "decision_ms": 1800
+        },
+        {
+          "day": 25,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 12.3,
+          "decision_ms": 1700
+        },
+        {
+          "day": 26,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 8.2,
+          "decision_ms": 1600
+        },
+        {
+          "day": 27,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 6.5,
+          "decision_ms": 2900
+        },
+        {
+          "day": 28,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 8.4,
+          "decision_ms": 1600
+        },
+        {
+          "day": 29,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 6.4,
+          "decision_ms": 1200
+        },
+        {
+          "day": 30,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 5.7,
+          "decision_ms": 1100
+        }
+      ],
+      "true_means": [
+        6.7,
+        5,
+        9.1,
+        8.2,
+        9.9
+      ],
+      "true_means_after_shift": null
+    },
+    {
+      "round": 2,
+      "key": "short",
+      "days": 10,
+      "shift_day": null,
+      "total_kg": 77.5,
+      "strategy_note": "First, I checked the one that was the best during the last season and compared it to the others in the order of liking, then I stayed with the one that gave the most fish this time.",
+      "note_written_at": "2026-10-20T18:53:31.519Z",
+      "choices": [
+        {
+          "day": 1,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 8.4,
+          "decision_ms": 1600
+        },
+        {
+          "day": 2,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 6,
+          "decision_ms": 1800
+        },
+        {
+          "day": 3,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 10,
+          "decision_ms": 1500
+        },
+        {
+          "day": 4,
+          "spot": 1,
+          "spot_name": "Rocky Point",
+          "catch_kg": 1.4,
+          "decision_ms": 1900
+        },
+        {
+          "day": 5,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 2.4,
+          "decision_ms": 1100
+        },
+        {
+          "day": 6,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 10.9,
+          "decision_ms": 1500
+        },
+        {
+          "day": 7,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 7.5,
+          "decision_ms": 1600
+        },
+        {
+          "day": 8,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 12.8,
+          "decision_ms": 1300
+        },
+        {
+          "day": 9,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 10,
+          "decision_ms": 1500
+        },
+        {
+          "day": 10,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 8.1,
+          "decision_ms": 6400
+        }
+      ],
+      "true_means": [
+        9.1,
+        6.8,
+        2.8,
+        7.6,
+        9.9
+      ],
+      "true_means_after_shift": null
+    },
+    {
+      "round": 3,
+      "key": "changing",
+      "days": 30,
+      "shift_day": 16,
+      "total_kg": 170.6,
+      "strategy_note": "I checked the different locations again. At first, I was surprised that this season there was less fish on general. Once I found one that was giving the best amount, I stick with that. When it gave 2 or 3 low amounts, I switched again.",
+      "note_written_at": "2026-10-20T18:56:09.295Z",
+      "choices": [
+        {
+          "day": 1,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 2.1,
+          "decision_ms": 2600
+        },
+        {
+          "day": 2,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 3.7,
+          "decision_ms": 1600
+        },
+        {
+          "day": 3,
+          "spot": 1,
+          "spot_name": "Rocky Point",
+          "catch_kg": 2.9,
+          "decision_ms": 1300
+        },
+        {
+          "day": 4,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 11.9,
+          "decision_ms": 1600
+        },
+        {
+          "day": 5,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 7.9,
+          "decision_ms": 1200
+        },
+        {
+          "day": 6,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 9.1,
+          "decision_ms": 1800
+        },
+        {
+          "day": 7,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 3.9,
+          "decision_ms": 1800
+        },
+        {
+          "day": 8,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 7.2,
+          "decision_ms": 1200
+        },
+        {
+          "day": 9,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 3.8,
+          "decision_ms": 1400
+        },
+        {
+          "day": 10,
+          "spot": 1,
+          "spot_name": "Rocky Point",
+          "catch_kg": 3.5,
+          "decision_ms": 2100
+        },
+        {
+          "day": 11,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 8,
+          "decision_ms": 1400
+        },
+        {
+          "day": 12,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 7.9,
+          "decision_ms": 1500
+        },
+        {
+          "day": 13,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 5.8,
+          "decision_ms": 1400
+        },
+        {
+          "day": 14,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 2.3,
+          "decision_ms": 1200
+        },
+        {
+          "day": 15,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 8.5,
+          "decision_ms": 1000
+        },
+        {
+          "day": 16,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 8.2,
+          "decision_ms": 1200
+        },
+        {
+          "day": 17,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 0.1,
+          "decision_ms": 1600
+        },
+        {
+          "day": 18,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 1.2,
+          "decision_ms": 1200
+        },
+        {
+          "day": 19,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 2.5,
+          "decision_ms": 1600
+        },
+        {
+          "day": 20,
+          "spot": 4,
+          "spot_name": "Lighthouse Reef",
+          "catch_kg": 4.4,
+          "decision_ms": 1600
+        },
+        {
+          "day": 21,
+          "spot": 1,
+          "spot_name": "Rocky Point",
+          "catch_kg": 6.5,
+          "decision_ms": 1400
+        },
+        {
+          "day": 22,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 6.8,
+          "decision_ms": 1200
+        },
+        {
+          "day": 23,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 7,
+          "decision_ms": 1500
+        },
+        {
+          "day": 24,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 5.8,
+          "decision_ms": 1500
+        },
+        {
+          "day": 25,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 6.3,
+          "decision_ms": 1300
+        },
+        {
+          "day": 26,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 3.7,
+          "decision_ms": 1200
+        },
+        {
+          "day": 27,
+          "spot": 1,
+          "spot_name": "Rocky Point",
+          "catch_kg": 4.7,
+          "decision_ms": 1300
+        },
+        {
+          "day": 28,
+          "spot": 2,
+          "spot_name": "Seagrass Bed",
+          "catch_kg": 5.5,
+          "decision_ms": 1200
+        },
+        {
+          "day": 29,
+          "spot": 3,
+          "spot_name": "Deep Channel",
+          "catch_kg": 11.1,
+          "decision_ms": 1100
+        },
+        {
+          "day": 30,
+          "spot": 0,
+          "spot_name": "Old Pier",
+          "catch_kg": 8.3,
+          "decision_ms": 1800
+        }
+      ],
+      "true_means": [
+        6.5,
+        2.9,
+        9.5,
+        3,
+        5.6
+      ],
+      "true_means_after_shift": [
+        4.3,
+        5.9,
+        2.8,
+        8,
+        7.6
+      ]
+    }
+  ]
+}
