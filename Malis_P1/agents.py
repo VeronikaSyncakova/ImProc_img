@@ -139,12 +139,6 @@ class RandomContextualAgent(ContextualAgent):
 
 
 class HumanRuleAgent(Agent):
-    """Task 4: the best human strategy identified in Part II, written as a rule.
-
-    Describe the rule here, precisely enough that someone could apply it by hand.
-    Add constructor parameters if your rule has any (call super().__init__ first).
-    """
-    
     """
     Threshold strategy:
     Stay at the current spot.
@@ -173,20 +167,10 @@ class HumanRuleAgent(Agent):
             self.low_count = 0
 
 
-    """def reset(self):
-        raise NotImplementedError("Task 4")
-
-    def choose(self):
-
-        raise NotImplementedError("Task 4")
-
-    def update(self, spot, catch):
-        raise NotImplementedError("Task 4")"""
-
-
 # Task 4: add below at least two agents implementing methods from the reading
 # (Sutton and Barto, Chapter 2), as subclasses of Agent. Document each class:
 # what it keeps in memory, how it chooses, what its parameters mean.
+
 class EpsilonGreedyAgent(Agent):
     """
     Epsilon-greedy agent with sample-average estimates.
@@ -270,23 +254,6 @@ class UCBAgent(Agent):
             catch - self.values[spot]
         ) / n
 
+
 # Task 6 (optional): add your contextual agents below, as subclasses of
 # ContextualAgent.
-
-"_________________________________________________________________________________________"
-from fishing import FishingBay
-#from agents import RandomAgent, play
-
-'''bay = FishingBay(season=1, seed=0)
-total = play(RandomAgent(seed=0), bay)
-print("Total: ", total, "Best possible: ", bay.best_possible())
-agent.reset()
-spot = agent.choose()
-agent.update(spot, catch)'''
-
-human_ag= HumanRuleAgent(seed=0)
-for i in range(1,3+1):
-    bay = FishingBay(season=i, seed=0)
-    total=play(human_ag, bay)
-
-    print("Season: ", i, "\nTotal: ", total, "Best possible: ", bay.best_possible(), "\n")
