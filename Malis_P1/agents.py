@@ -269,7 +269,7 @@ class LinearContextualAgent(ContextualAgent):
 
     def __init__(self, n_spots=5, seed=None,
                  epsilon=0.1, reg=1.0):
-        super()._init_(n_spots, seed)
+        super().__init__(n_spots, seed)
         self.epsilon = epsilon
         self.reg = reg
 
@@ -335,7 +335,7 @@ class UCBContextualBaseline(ContextualAgent):
     """UCB agent that ignores weather conditions."""
 
     def __init__(self, n_spots=5, seed=None, c=2.0):
-        super()._init_(n_spots, seed)
+        super().__init__(n_spots, seed)
         self.base = UCBAgent(n_spots=n_spots, seed=seed, c=c)
 
     def reset(self):
