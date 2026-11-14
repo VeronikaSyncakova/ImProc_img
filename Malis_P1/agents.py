@@ -257,3 +257,92 @@ class UCBAgent(Agent):
 
 # Task 6 (optional): add your contextual agents below, as subclasses of
 # ContextualAgent.
+class LinearContextualAgent(ContextualAgent):
+    """
+    One linear regression model for each fishing spot.
+
+    epsilon = 0: use predictions only.
+    epsilon > 0: sometimes explore randomly.
+
+    Stores one small regression model per spot.
+    """
+
+    def _init_(self, n_spots=5, seed=None,
+                 epsilon=0.1, reg=1.0):
+        super()._init_(n_spots, seed)
+        self.epsilon = epsilon
+        self.reg = reg
+
+    def reset(self):
+        self.counts = np.zeros(self.n_spots, dtype=int)
+
+        # Linear regression uses 4 features:
+        # intercept, wind, waves, tide
+        self.A = np.array([
+            self.reg * np.eye(4)
+            for _ in range(self.n_spots)
+        ])
+
+        self.b = np.zeros((self.n_spots, 4))
+
+    def features(self, x):
+        # Normalize weather values
+        return np.array([
+            1.0,
+            x[0] / 40.0,
+            x[1] / 3.0,
+            x[2] / 2.0
+        ])
+
+    def choose(self, x):
+        # Try each location once initially
+        unexplored = np.flatnonzero(self.counts == 0)
+
+        if len(unexplored) > 0:
+            return int(self.rng.choice(unexplored))
+
+        # Sometimes explore a random location
+        if self.rng.random() < self.epsilon:
+            return int(self.rng.integers(self.n_spots))
+
+        z = self.features(x)
+
+        # Predict catch for every location
+        predictions = []
+
+        for spot in range(self.n_spots):
+            weights = np.linalg.solve(
+                self.A[spot],
+                self.b[spot]
+            )
+
+            prediction = weights @ z
+            predictions.append(prediction)
+
+        return int(np.argmax(predictions))
+
+    def update(self, x, spot, catch):
+        z = self.features(x)
+
+        self.counts[spot] += 1
+
+        # Update regression using only the chosen spot
+        self.A[spot] += np.outer(z, z)
+        self.b[spot] += catch * z
+
+
+class UCBContextualBaseline(ContextualAgent):
+    """UCB agent that ignores weather conditions."""
+
+    def _init_(self, n_spots=5, seed=None, c=2.0):
+        super()._init_(n_spots, seed)
+        self.base = UCBAgent(n_spots=n_spots, seed=seed, c=c)
+
+    def reset(self):
+        self.base.reset()
+
+    def choose(self, x):
+        return self.base.choose()
+
+    def update(self, x, spot, catch):
+        self.base.update(spot, catch)
